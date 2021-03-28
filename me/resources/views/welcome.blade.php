@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <style>
-    </style>
+    <meta charset="UTF-8" />
+    <title>Giansante</title>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/giansante.me/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/giansante.me/css/googleFonts.css" type="text/css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/giansante.me/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/giansante.me/css/skelton.css" type="text/css">
 </head>
-<body class="antialiased">
-    <div>
-        <h1>Curtis' Homepage</h1>
+<body>
+    <div class="pic">
+        <a href="https://drive.giansante.me">
+            <img src="https://s3.amazonaws.com/giansante.me/thumb_IMG_3024_1024.jpg" id="bayOystersBest">
+        </a>
+        <span class="northPork"><a class="button" href="https://drive.giansante.me">Drive</a>
+        </span>
     </div>
 </body>
 </html>
