@@ -18,3 +18,20 @@ use App\Http\Controllers\PageController;
 Route::get('/', [PageController::class, 'index']);
 Route::get('/songs', [SongController::class, 'index']);
 Route::get('/search', [SongController::class, 'search']);
+
+Route::get('/debug', function () {
+    $debug = [
+        'Environment' => App::environment()
+    ];
+
+    $debug['MySQL connection config'] = config('database.connections.mysql');
+
+    try {
+        $databases = DB::select('SHOW DATABASES;');
+        $debug['Database connection test'] = 'PASSED';
+        $debug['Databases'] = array_column($databases, 'Database');
+    } catch (Exception $e) {
+        $debug['Database connection test'] = 'FAILED: '.$e->getMessage();
+    }
+    dump($debug);
+});
