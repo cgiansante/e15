@@ -2,8 +2,9 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\AngleController;
+use App\Http\Controllers\PondController;
+use App\Http\Controllers\SpecieController;
 use App\Http\Controllers\PageController;
-use App\Http\Controllers\ModelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,8 @@ use App\Http\Controllers\ModelController;
 */
 
 Route::get('/', [PageController::class, 'index']);
-// Route::get('/fish', [FishController::class, 'index']);
-Route::get('/search', [AngleController::class, 'index']);
+Route::get('/maps', [PondController::class, 'map']);
+Route::get('/search', [AngleController::class, 'search']);
 // Route::get('/practice', [ModelController::class, 'practice']);
 // Route::get('/fish', [ModelController::class, 'practice']);
 

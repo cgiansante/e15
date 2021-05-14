@@ -17,8 +17,7 @@ class CreateAnglesTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('slug', 100);
-            $table->smallInteger('species_id');
-            $table->string('pond_id', 100);
+            //$table->bigInteger('pond_id')->unsigned;
             $table->float('length_feet', 4, 2)->nullable;
             $table->float('length_inches', 2, 0)->nullable;
             $table->float('weight', 3, 1)->nullable;

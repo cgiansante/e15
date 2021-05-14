@@ -29,8 +29,8 @@ class AnglesTableSeeder extends Seeder
             $angle->created_at = Carbon::now()->subDays($count)->toDateTimeString();
             $angle->updated_at = Carbon::now()->subDays($count)->toDateTimeString();
             $angle->slug = $angleData['slug'];
-            $angle->species_id = $angleData['specie_id'];
-            $angle->pond_id = $angleData['pond_slug'];
+            $angle->speciesId = $angleData['specie_id'];
+            $angle->pond_id = $angleData['pond_id'];
             $angle->length_feet = $angleData['length_feet'];
             $angle->length_inches = $angleData['length_inches'];
             $angle->weight = $angleData['weight'];

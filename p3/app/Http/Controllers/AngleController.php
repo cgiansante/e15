@@ -8,9 +8,23 @@ use App\Models\Angle;
 
 class AngleController extends Controller
 {
-    public function index()
+    public function search(Request $request)
     {
-        dump(Angle::all()->toArray());
-        //dump('songs');
+        $fishes = Angle::all()->toArray();
+        
+        $searchPond = $request->input('searchTerm', '');
+        $searchSpecies = $request->input('species', '');
+        $searchResults = [];
+        
+        foreach ($fishes as $slug => $fish) {
+            if (($fish['speciesId'] = $searchSpecies)) {
+                $searchResults [$slug] = $fish;
+            }
+        }
+
+        session(['fishes' => $fishes]);
+        return redirect('/')->with([
+             'fishes' => $fishes
+             ])->withInput();
     }
 }

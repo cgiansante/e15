@@ -3,100 +3,100 @@
     "name": "Walden Hog",
     "slug": "walden-hog",
     "specie_id": "1",
-    "pond_slug": "walden-pond",
+    "pond_id": "273",
     "length_feet": "1",
     "length_inches": "2",
     "weight": "3.4",
-    "user_id" : "3"
+    "user_id": "3"
   },
   {
     "name": "Wachusett Perchie",
     "slug": "wachusett-perchie",
     "specie_id": "5",
-    "pond_slug": "wachusett-reservoir",
+    "pond_id": "272",
     "length_feet": "0",
     "length_inches": "11.5",
     "weight": "2.2",
-    "user_id" : "3"
+    "user_id": "3"
   },
   {
     "name": "Ripple Larry",
     "slug": "ripple-larry",
     "specie_id": "1",
-    "pond_slug": "lake-ripple",
+    "pond_id": "143",
     "length_feet": "1",
     "length_inches": "4",
     "weight": "3.8",
-    "user_id" : "3"
+    "user_id": "3"
   },
   {
     "name": "Long Pond Larry",
     "slug": "long-pond-larry",
     "specie_id": "1",
-    "pond_slug": "long-pond-littleton",
+    "pond_id": "171",
     "length_feet": "1",
     "length_inches": "8",
     "weight": "5.1",
-    "user_id" : "3"
+    "user_id": "3"
   },
   {
     "name": "Cliff Trout",
     "slug": "cliff-trout",
     "specie_id": "3",
-    "pond_slug": "cliff-pond",
+    "pond_id": "43",
     "length_feet": "1",
     "length_inches": "6",
     "weight": "2.6",
-    "user_id" : "3"
+    "user_id": "3"
   },
   {
     "name": "Crystal Lake Smallie",
     "slug": "crystal-lake-smallie",
     "specie_id": "2",
-    "pond_slug": "crystal-lake",
+    "pond_id": "51",
     "length_feet": "1",
     "length_inches": "5",
     "weight": "2.1",
-    "user_id" : "1"
+    "user_id": "1"
   },
   {
     "name": "Spy Larry",
     "slug": "spy-larry",
     "specie_id": "1",
-    "pond_slug": "spy-pond",
+    "pond_id": "257",
     "length_feet": "1",
     "length_inches": "2",
     "weight": "3.4",
-    "user_id" : "1"
+    "user_id": "1"
   },
   {
     "name": "Spy Monster Pick",
     "slug": "spy-monster-pick",
     "specie_id": "9",
-    "pond_slug": "spy-pond",
+    "pond_id": "257",
     "length_feet": "2",
     "length_inches": "3",
     "weight": "4.4",
-    "user_id" : "1"
+    "user_id": "1"
   },
   {
     "name": "Boston Sunny",
     "slug": "walden-hog",
     "specie_id": "10",
-    "pond_slug": "jamaica-pond",
+    "pond_id": "117",
     "length_feet": "0",
     "length_inches": "6",
     "weight": ".4",
-    "user_id" : "2"
+    "user_id": "2"
   },
   {
     "name": "Stearns Smallie",
     "slug": "stearns-smallie",
     "specie_id": "2",
-    "pond_slug": "stearns-pond",
+    "pond_id": "258",
     "length_feet": "1",
     "length_inches": "5",
     "weight": "2.1",
-    "user_id" : "2"
+    "user_id": "2"
   }
 ]

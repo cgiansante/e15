@@ -1,7 +1,6 @@
 @extends('layouts/header')
 @section('content')
 
-
 @if(Auth::user())
 <h2>
     Hello {{ Auth::user()->name }}! Find that Big Boss Bass with the help of your friends.
@@ -14,16 +13,16 @@
     <input list="species-choices" id="species" name="species" placeholder='Select a species' value='{{old('species')}}' />
 
     <datalist id="species-choices">
-        <option value="Large Mouth Bass">
-        <option value="Small Mouth Bass">
-        <option value="Trout">
-        <option value="Salmon">
-        <option value="Perch">
-        <option value="Walleye">
-        <option value="Pickeral">
-        <option value="Pike">
-        <option value="Muskie">
-        <option value="Other">
+        <option id="1" value="Large Mouth Bass">
+        <option id="2" value="Small Mouth Bass">
+        <option id="3" value="Trout">
+        <option id="4" value="Salmon">
+        <option id="5" value="Perch">
+        <option id="6" value="Walleye">
+        <option id="7" value="Pickeral">
+        <option id="8" value="Pike">
+        <option id="9" value="Muskie">
+        <option id="10" value="Other">
     </datalist>
 
     <fieldset>
@@ -43,21 +42,12 @@
 </ul>
 @endif
 
-@if(!is_null($searchResults))
-@if(count($searchResults) == 0)
-<div class='results alert alert-warning'>
-    No results found.
-</div>
-@else
-<div class='results alert alert-primary'>
-
-    {{ count($searchResults) }}
-    {{ Str::plural('Result', count($searchResults)) }}:
-
-    @foreach($searchResults as $slug => $song)
-    <div><a href='{{ $song['Track URI']}}'> <img class='images' title='{{ $song['TrackName']}} by {{ $song['ArtistName']}}' src='{{ $song['Album Image URL'] }}'></a></div>
+<div>
+    @if(!is_null($fishes))
+    @foreach($fishes as $slug => $fish)
+    <div>{{ $fish['slug']}}</div>
     @endforeach
     @endif
-    @endif
-    @endsection
+
 </div>
+@endsection

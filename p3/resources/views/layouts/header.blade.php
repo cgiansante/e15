@@ -15,7 +15,7 @@
         <h1><a href='/'>Big Boss Bass</a></h1>
         <nav>
             <ul>
-                <li><a href='/home'>Fish Feed</a></li>
+                <li><a href='/maps'>Pond Maps</a></li>
                 <li><a href='/search'>Find Fish</a></li>
                 @if(Auth::user())
                 <li><a href='/myfish'>My Fish</a></li>

@@ -32,6 +32,7 @@ class PondsTableSeeder extends Seeder
             # Learn more: https://github.com/briannesbitt/Carbon
             $pond->created_at = Carbon::now()->subDays($count)->toDateTimeString();
             $pond->updated_at = Carbon::now()->subDays($count)->toDateTimeString();
+            $pond->id = $pondData['Id'];
             $pond->slug = $pondData['Slug'];
             $pond->name = $pondData['Name'];
             $pond->town = $pondData['Town'];
